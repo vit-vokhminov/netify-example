@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        
+        <title>Чат__Яндекс.Практикум</title>
+
+        <link rel="icon" href="static/img/favicon-16x16.png" type="image/x-icon" />
+
+        <link rel="stylesheet" href="static/css/resetNormalize.css" type="text/css" />
+        <link rel="stylesheet" href="static/css/style.css" type="text/css" />
+    </head>
+
+    <body>
+
+        <main class="main">
+
+            <div class="back">
+                <a href="choose_chat.html">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="14" cy="14" r="14" transform="rotate(-180 14 14)" fill="#3369F3"/>
+                        <rect x="20" y="14.8" width="11" height="1.6" transform="rotate(-180 20 14.8)" fill="white"/>
+                        <path d="M13 19L9 14L13 9" stroke="white" stroke-width="1.6"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="profile_main">
+                <div class="profile">
+                    <form action="">
+                        <div class="profile_avatar"><span></span></div>
+                        <div class="profile_data">
+                            <div class="profile_line">
+                                <div class="name_field">Старый пароль</div>
+                                <div class="value_field">
+                                    <input type="password" name="old_pass" class="valid"
+                                           placeholder="&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;">
+                                </div>
+                            </div>
+                            <div class="profile_line">
+                                <div class="name_field">Новый пароль</div>
+                                <div class="value_field">
+                                    <input type="password" name="password" class="valid"
+                                           placeholder="&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;">
+                                </div>
+                            </div>
+                            <div class="profile_line">
+                                <div class="name_field">Повторите новый пароль</div>
+                                <div class="value_field">
+                                    <input type="password" name="conf_password" class="valid"
+                                           placeholder="&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;">
+                                </div>
+                            </div>
+                            <div class="text_error hidden">Пароли не совпадают</div>
+                        </div>
+                        <div class="profile_btn">
+                            <button type="submit" class="btn">Сохранить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+
+
+        <script src="static/js/script.js"></script>
+    </body>
+
+</html>
