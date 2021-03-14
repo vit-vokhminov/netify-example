@@ -8,10 +8,10 @@
         
         <title>Чат__Яндекс.Практикум</title>
 
-        <link rel="icon" href="static/img/favicon-16x16.png" type="image/x-icon" />
+        <link rel="icon" href="main/img/favicon-16x16.png" type="image/x-icon" />
 
-        <link rel="stylesheet" href="static/css/resetNormalize.css" type="text/css" />
-        <link rel="stylesheet" href="static/css/style.css" type="text/css" />
+        <link rel="stylesheet" href="main/css/resetNormalize.css" type="text/css" />
+        <link rel="stylesheet" href="main/css/style.css" type="text/css" />
     </head>
 
     <body>
@@ -46,10 +46,10 @@
                                 <div class="text_error hidden">Пароли не совпадают</div>
                             </div>
 
-                            <button type="submit" class="btn">Зарегистрироваться</button>
+                            {{> button text='Регистрация' }}
                         </form>
                         <div class="no_account">
-                            <a href="authorization.html">Войти</a>
+                            <a href="/authorization">Войти</a>
                         </div>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
         </main>
 
 
-        <script src="static/js/script.js"></script>
+        <script src="main/js/script.js"></script>
     </body>
 
 </html>

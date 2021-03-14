@@ -1,13 +1,19 @@
+// При всене расширения с js на ts появялется ошибка
+//VM7602 script.js:1 Uncaught SyntaxError: Unexpected token '<'
+// да как так?
+
 function showBalloon() {
-    let balloon = this.parentElement.querySelector('.balloon')
+    let balloon = this.parentElement.querySelector('.balloon');
     balloon.classList.toggle('balloon_show');
 }
+
 
 let balloons = document.querySelectorAll('.attach_bt,.option_bt');
 
 for (let i = 0; i < balloons.length; i++) {
     balloons[i].onclick = showBalloon;
 }
+
 
 // открытие и скрытие попапов
 function openPopup() {
@@ -58,8 +64,7 @@ validInput.forEach(function (input) {
 // submit форм
 if (forms) {
     // проверка на равенство паролей
-    function validPass(conf_password) {
-        const parentForm = conf_password.closest('form');
+    function validPass(conf_password,parentForm) {
         const text_error = parentForm.querySelector(`.text_error`);
         const password = parentForm.querySelector(`input[name="password"]`);
 
@@ -86,7 +91,7 @@ if (forms) {
 
             // проверка равенства паролей при изменении паролей
             if(el.querySelector(`[name="conf_password"]`)){
-                validPass(el.querySelector(`[name="conf_password"]`))
+                validPass(el.querySelector(`[name="conf_password"]`),el)
             }
 
 
@@ -117,7 +122,7 @@ if (forms) {
 
                     // проверка равенства паролей при регистрации
                     if(popup.querySelector(`[name="conf_password"]`)){
-                        validPass(popup.querySelector(`[name="conf_password"]`))
+                        validPass(popup.querySelector(`[name="conf_password"]`),popup)
                     }
                 })
 

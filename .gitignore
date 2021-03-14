@@ -1,11 +1,25 @@
-.vscode
-.module-cache
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
 .DS_Store
-jspm_packages/
-.idea
-*.swp
-*.log
-atlassian-ide-plugin.xml
-.eslintcache
-node_modules/
-*.lock
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+/.idea
